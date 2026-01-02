@@ -1,61 +1,57 @@
-import { Truck, Wrench, Building2, Factory, Check } from "lucide-react";
+import { Truck, Wrench, Building2, Factory, Check } from 'lucide-react';
 
 const personas = [
   {
     icon: Truck,
-    title: "Owner-Operators",
+    title: 'Owner-Operators',
     description:
-      "You're on the road and don't have a shop on retainer. You need help fast.",
+      "You're on the road and don't have time to wait. You need help fast.",
     features: [
-      "See available techs near you",
-      "Compare ratings and distance",
-      "Request help with one tap",
-      "Track arrival in real-time",
+      'See available techs near you',
+      'Compare ratings and distance',
+      'Request help with one tap',
+      'Track arrival in real-time',
     ],
-    availability: "February 2026",
-    color: "primary",
+    color: 'primary',
   },
   {
     icon: Wrench,
-    title: "Independent Techs",
+    title: 'Independent Techs',
     description:
       "You're building your business and need more customers without cold calling.",
     features: [
-      "Get job requests from nearby drivers",
-      "All job details upfront",
-      "Accept what fits your schedule",
-      "Build reputation through ratings",
+      'Get job requests from nearby drivers',
+      'All job details upfront',
+      'Accept what fits your schedule',
+      'Build reputation through ratings',
     ],
-    availability: "February 2026",
-    color: "success",
+    color: 'success',
   },
   {
     icon: Building2,
-    title: "Fleet Managers",
+    title: 'Fleet Managers',
     description:
-      "You manage company drivers and need fast coordination with your approved vendors.",
+      'You manage multiple drivers and need fast coordination to get the wheels turning.',
     features: [
-      "Receive breakdown alerts from drivers",
-      "Route to preferred vendors instantly",
-      "Track all active jobs in real-time",
-      "Analytics on response times and costs",
+      'Receive breakdown alerts from drivers',
+      'Route to preferred or new vendors instantly',
+      'Track all active jobs in real-time',
+      'Analytics on response times and costs',
     ],
-    availability: "Q2 2026",
-    color: "accent",
+    color: 'accent',
   },
   {
     icon: Factory,
-    title: "Shop Owners",
+    title: 'Shop Owners',
     description:
-      "You run a mobile service operation and want more fleet contracts and better job coordination.",
+      'You run a mobile service operation and want more fleet contracts and better job coordination.',
     features: [
-      "Receive job requests from fleet partners",
-      "Assign jobs to your available techs",
-      "Manage multiple active jobs at once",
-      "Track your team's locations",
+      'Receive job requests from fleet partners',
+      'Assign jobs to your available techs',
+      'Manage multiple active jobs at once',
+      "Track your team's locations in real-time",
     ],
-    availability: "Q2 2026",
-    color: "primary",
+    color: 'primary',
   },
 ];
 
@@ -79,20 +75,20 @@ const WhoSection = () => {
             >
               <div
                 className={`w-14 h-14 rounded-xl flex items-center justify-center mb-4 ${
-                  persona.color === "primary"
-                    ? "bg-primary/10"
-                    : persona.color === "success"
-                    ? "bg-success/10"
-                    : "bg-accent/10"
+                  persona.color === 'primary'
+                    ? 'bg-primary/10'
+                    : persona.color === 'success'
+                    ? 'bg-success/10'
+                    : 'bg-accent/10'
                 }`}
               >
                 <persona.icon
                   className={`w-7 h-7 ${
-                    persona.color === "primary"
-                      ? "text-primary"
-                      : persona.color === "success"
-                      ? "text-success"
-                      : "text-accent"
+                    persona.color === 'primary'
+                      ? 'text-primary'
+                      : persona.color === 'success'
+                      ? 'text-success'
+                      : 'text-accent'
                   }`}
                 />
               </div>
@@ -116,15 +112,13 @@ const WhoSection = () => {
               <div className="mt-6 pt-4 border-t border-border">
                 <span
                   className={`text-sm font-semibold ${
-                    persona.color === "primary"
-                      ? "text-primary"
-                      : persona.color === "success"
-                      ? "text-success"
-                      : "text-accent"
+                    persona.color === 'primary'
+                      ? 'text-primary'
+                      : persona.color === 'success'
+                      ? 'text-success'
+                      : 'text-accent'
                   }`}
-                >
-                  Available: {persona.availability}
-                </span>
+                ></span>
               </div>
             </div>
           ))}

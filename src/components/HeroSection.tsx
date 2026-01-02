@@ -1,9 +1,9 @@
-import { MapPin, Wrench, Navigation } from "lucide-react";
-import { Button } from "./ui/button";
+import { MapPin, Wrench, Navigation } from 'lucide-react';
+import { Button } from './ui/button';
 
 const HeroSection = () => {
   const scrollToWaitlist = () => {
-    document.getElementById("waitlist")?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -19,9 +19,9 @@ const HeroSection = () => {
           {/* Text Content */}
           <div className="text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight animate-fade-in-up">
-              Broke Down?{" "}
+              Broke Down?{' '}
               <span className="text-accent">Get Help On The Way</span> In
-              Minutes.
+              Minutes, Not Hours.
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-xl mx-auto lg:mx-0 animate-fade-in-up animation-delay-100">
               RigRescue connects truck drivers with mobile diesel techs nearby.
@@ -30,7 +30,7 @@ const HeroSection = () => {
             </p>
             <div className="animate-fade-in-up animation-delay-200">
               <Button variant="hero" onClick={scrollToWaitlist}>
-                Join the Waitlist - Launching February 2026
+                Join the Waitlist
               </Button>
             </div>
             <p className="mt-6 text-primary-foreground/60 text-sm animate-fade-in-up animation-delay-300">
@@ -87,7 +87,7 @@ const HeroSection = () => {
 
                     <div
                       className="absolute top-[30%] right-[15%] animate-float"
-                      style={{ animationDelay: "0.5s" }}
+                      style={{ animationDelay: '0.5s' }}
                     >
                       <div className="w-10 h-10 rounded-full bg-success flex items-center justify-center shadow-md">
                         <Wrench className="w-5 h-5 text-success-foreground" />
@@ -99,7 +99,7 @@ const HeroSection = () => {
 
                     <div
                       className="absolute bottom-[25%] left-[15%] animate-float"
-                      style={{ animationDelay: "1s" }}
+                      style={{ animationDelay: '1s' }}
                     >
                       <div className="w-10 h-10 rounded-full bg-success flex items-center justify-center shadow-md">
                         <Wrench className="w-5 h-5 text-success-foreground" />

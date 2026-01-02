@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { Mail } from 'lucide-react';
 
 const TeamSection = () => {
   return (
@@ -6,7 +6,7 @@ const TeamSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-8">
-            Built By Someone Who's{" "}
+            Built By Someone Who's{' '}
             <span className="text-primary">Lived This Problem</span>
           </h2>
 
@@ -32,15 +32,12 @@ const TeamSection = () => {
             </div>
 
             <p className="text-xl font-bold text-primary mb-8">
-              So I'm fixing it.
+              So we're fixing it.
             </p>
 
             <div className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
               <Mail className="w-5 h-5" />
-              <a
-                href="mailto:hello@rigrescue.com"
-                className="font-medium"
-              >
+              <a href="mailto:hello@rigrescue.com" className="font-medium">
                 Questions? Email me directly
               </a>
             </div>

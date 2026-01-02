@@ -1,26 +1,26 @@
-import { Zap, DollarSign, Heart } from "lucide-react";
+import { Zap, DollarSign, Heart } from 'lucide-react';
 
 const benefits = [
   {
     icon: Zap,
-    title: "Speed",
+    title: 'Speed',
     description:
-      "What used to take an hour of phone tag now takes minutes. Driver submits request → tech accepts → both navigate to each other. Done.",
-    color: "accent",
+      'What used to take an hour of phone tag now takes minutes. Driver submits request → tech accepts → both navigate to each other. Done.',
+    color: 'accent',
   },
   {
     icon: DollarSign,
-    title: "More Work, Less Downtime",
+    title: 'More Work, Less Downtime',
     description:
-      "Drivers get back on the road faster. Independent techs fill gaps in their schedule. Fleets reduce costly delays. Everyone makes more money.",
-    color: "success",
+      'Drivers get back on the road faster. Independent techs fill gaps in their schedule. Fleets reduce costly delays. Shops increase efficiency. Everyone makes more money.',
+    color: 'success',
   },
   {
     icon: Heart,
-    title: "Build Relationships",
+    title: 'Build Relationships',
     description:
-      "Drivers find great techs and save them as favorites. Techs build their reputation with ratings. Fleets discover new reliable vendors for backup.",
-    color: "primary",
+      'Drivers find great techs and save them as favorites. Shops & Techs build their reputation with ratings. Fleets discover new reliable vendors for backup.',
+    color: 'primary',
   },
 ];
 
@@ -30,7 +30,7 @@ const WhySection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Real-Time Visibility.{" "}
+            Real-Time Visibility.{' '}
             <span className="text-accent">Zero Phone Tag.</span>
           </h2>
         </div>
@@ -44,20 +44,20 @@ const WhySection = () => {
             >
               <div
                 className={`w-20 h-20 rounded-2xl mx-auto mb-6 flex items-center justify-center ${
-                  benefit.color === "accent"
-                    ? "bg-accent/10"
-                    : benefit.color === "success"
-                    ? "bg-success/10"
-                    : "bg-primary/10"
+                  benefit.color === 'accent'
+                    ? 'bg-accent/10'
+                    : benefit.color === 'success'
+                    ? 'bg-success/10'
+                    : 'bg-primary/10'
                 }`}
               >
                 <benefit.icon
                   className={`w-10 h-10 ${
-                    benefit.color === "accent"
-                      ? "text-accent"
-                      : benefit.color === "success"
-                      ? "text-success"
-                      : "text-primary"
+                    benefit.color === 'accent'
+                      ? 'text-accent'
+                      : benefit.color === 'success'
+                      ? 'text-success'
+                      : 'text-primary'
                   }`}
                 />
               </div>

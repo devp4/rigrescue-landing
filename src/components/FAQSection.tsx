@@ -3,48 +3,54 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from '@/components/ui/accordion';
 
 const faqs = [
   {
-    question: "When exactly does this launch?",
+    question: 'Why use this service over traditional methods?',
     answer:
-      "We're targeting February 2026 for the driver + independent tech MVP. Fleet and shop management features roll out in Q2 2026. Beta users get early access to everything.",
+      "Traditional breakdown coordination is broken for everyone. Drivers waste hours calling shops that don't answer or are too far away. Independent techs can't find customers without existing relationships. Fleet managers play phone tag between drivers and vendors with no visibility. RigRescue solves this with real-time matching, instant notifications, and live tracking—getting drivers back on the road faster while helping techs build their business.",
+  },
+  {
+    question: 'When exactly does this launch?',
+    answer:
+      "We're targeting March 2026 for the driver + independent tech MVP. Fleet and shop management features roll out in Q2 2026. Beta users get early access to everything.",
   },
   {
     question: "What if I'm a company driver - can I use this?",
     answer:
-      "Yes! In the MVP, you use it just like an owner-operator (find and request techs directly). Later, your fleet manager can integrate it into their dispatch workflow if they want.",
+      'Yes! In the MVP, you use it just like an owner-operator (find and request techs directly). Later, your fleet manager can integrate it into their dispatch workflow if they want.',
   },
   {
-    question: "I'm a company driver - how does this work for me in the full version?",
+    question:
+      "I'm a company driver - how does this work for me in the full version?",
     answer:
       "You'll use RigRescue to report breakdowns to your fleet manager/dispatcher. You submit the issue and location, and your manager routes the job to an approved vendor. You'll see who's coming and track their arrival, but your company handles vendor selection.",
   },
   {
-    question: "What if my company driver uses this without approval?",
+    question: 'What if my company driver uses this without approval?',
     answer:
       "Company drivers won't be able to request techs directly unless their fleet manager enables that setting. By default, company driver accounts require fleet manager approval for all vendor selection. Owner-operators have full control.",
   },
   {
-    question: "How do you verify techs?",
+    question: 'How do you verify techs?',
     answer:
-      "Every tech goes through verification before joining: valid CDL/mechanic certifications, insurance, and background check. Drivers see verified badges on tech profiles.",
+      'Every tech goes through verification before joining: valid CDL/mechanic certifications and insurance liability. Drivers see verified badges on tech profiles.',
   },
   {
-    question: "What areas will be covered?",
+    question: 'What areas will be covered?',
     answer:
       "We're starting in the Midwest and expanding based on where our waitlist users are. If you join, we prioritize your region.",
   },
   {
-    question: "Can I still call my regular tech?",
+    question: 'Can I still call my regular tech?',
     answer:
       "Of course! Many drivers will use RigRescue for emergencies or when their regular tech isn't available. Many techs will use it to fill gaps between their existing customers.",
   },
   {
-    question: "What about payments?",
+    question: 'What about payments?',
     answer:
-      "For MVP, you pay the tech directly (cash, Venmo, Zelle, whatever works). Digital invoicing and in-app payments are coming in Q2 2026.",
+      'For MVP, you pay the tech directly (cash, Venmo, Zelle, whatever works). Digital invoicing and in-app payments will be integrated in future releases.',
   },
   {
     question: "I'm an independent tech - how do I get more visibility?",
@@ -57,14 +63,9 @@ const faqs = [
       "Fleet managers can discover and add shops to their approved vendor list through the platform. You'll build your reputation through completed jobs, response times, and ratings. Over time, more fleets will add you to their approved lists.",
   },
   {
-    question: "Can independent techs get work from fleets?",
+    question: 'Can independent techs get work from fleets?',
     answer:
       "Yes! Fleet managers can add independent techs to their approved vendor list, not just shops. If you're a reliable independent tech, fleets can build a relationship with you through the platform.",
-  },
-  {
-    question: "What if a fleet's approved vendors are all unavailable?",
-    answer:
-      "Fleet managers can choose to expand the search to all available techs in the area if their approved vendors can't respond. This is a setting they control - some fleets may require approved vendors only, others may allow backup options.",
   },
 ];
 

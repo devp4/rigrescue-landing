@@ -1,21 +1,21 @@
-import { useState } from "react";
-import { Button } from "./ui/button";
-import { toast } from "@/hooks/use-toast";
+import { useState } from 'react';
+import { Button } from './ui/button';
+import { toast } from '@/hooks/use-toast';
 
 const roles = [
-  "Owner-operator / Independent driver",
-  "Company driver (OTR)",
-  "Company driver (Regional/Local)",
-  "Independent mobile diesel tech",
-  "Shop owner with mobile service",
-  "Fleet manager / Dispatcher",
-  "Other",
+  'Owner-operator / Independent driver',
+  'Company driver (OTR)',
+  'Company driver (Regional/Local)',
+  'Independent mobile diesel tech',
+  'Shop owner with mobile service',
+  'Fleet manager / Dispatcher',
+  'Other',
 ];
 
 const WaitlistSection = () => {
-  const [email, setEmail] = useState("");
-  const [role, setRole] = useState("");
-  const [painPoint, setPainPoint] = useState("");
+  const [email, setEmail] = useState('');
+  const [role, setRole] = useState('');
+  const [painPoint, setPainPoint] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -23,9 +23,9 @@ const WaitlistSection = () => {
 
     if (!email || !role) {
       toast({
-        title: "Please fill in required fields",
-        description: "Email and role are required.",
-        variant: "destructive",
+        title: 'Please fill in required fields',
+        description: 'Email and role are required.',
+        variant: 'destructive',
       });
       return;
     }
@@ -40,14 +40,17 @@ const WaitlistSection = () => {
       description: "We'll notify you when RigRescue launches.",
     });
 
-    setEmail("");
-    setRole("");
-    setPainPoint("");
+    setEmail('');
+    setRole('');
+    setPainPoint('');
     setIsSubmitting(false);
   };
 
   return (
-    <section id="waitlist" className="py-20 lg:py-32 gradient-hero relative overflow-hidden">
+    <section
+      id="waitlist"
+      className="py-20 lg:py-32 gradient-hero relative overflow-hidden"
+    >
       {/* Background Effects */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 right-10 w-72 h-72 bg-accent rounded-full blur-3xl" />
@@ -57,11 +60,11 @@ const WaitlistSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4">
-            Launching <span className="text-accent">February 2026</span>
+            Get Notified <span className="text-accent">When We Launch!</span>
           </h2>
           <p className="text-lg text-primary-foreground/80 mb-8">
             We're starting with owner-operators and independent techs. Fleet and
-            shop management tools coming Q2 2026.
+            shop management tools coming after.
           </p>
           <p className="text-primary-foreground/90 mb-8 font-medium">
             Be one of the first to get access:
@@ -107,7 +110,7 @@ const WaitlistSection = () => {
               className="w-full"
               disabled={isSubmitting}
             >
-              {isSubmitting ? "Joining..." : "Get Early Access"}
+              {isSubmitting ? 'Joining...' : 'Get Early Access'}
             </Button>
           </form>
 
